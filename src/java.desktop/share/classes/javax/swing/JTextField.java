@@ -428,6 +428,15 @@ public class JTextField extends JTextComponent implements SwingConstants {
     }
 
     /**
+    * fix fcitx position
+    *
+    * @return font metrics
+    */
+    public FontMetrics getFontMetrics() {
+        return getFontMetrics(getFont());
+    }
+
+    /**
      * Returns the preferred size <code>Dimensions</code> needed for this
      * <code>TextField</code>.  If a non-zero number of columns has been
      * set, the width is set to the columns multiplied by

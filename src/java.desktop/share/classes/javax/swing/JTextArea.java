@@ -563,6 +563,15 @@ public class JTextArea extends JTextComponent {
     }
 
     /**
+     * fix fcitx position
+     *
+     * @return font metrics
+     */
+    public FontMetrics getFontMetrics() {
+        return getFontMetrics(getFont());
+    }
+
+    /**
      * Returns the number of columns in the TextArea.
      *
      * @return number of columns &gt;= 0
